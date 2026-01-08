@@ -1,0 +1,8 @@
+{
+  "name": "VK Digi Solutions - Performance Growth Agency",
+  "description": "Ads, SEO, websites and automation to generate consistent business growth. We build digital systems that generate business.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

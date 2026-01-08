@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Digi Solutions | Performance Marketing Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Analytics Integration -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GA_ID_PLACEHOLDER"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GA_ID_PLACEHOLDER');
+    </script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBlue: '#2E3A8C',
+              brandOrange: '#F28C38',
+              brandOrangeHover: '#e37b2d',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'slide-up': 'slideUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: white;
+            color: #1a1a1a;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2E3A8C, #F28C38);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-orange {
+            background-color: #F28C38;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-orange:hover {
+            background-color: #e37b2d;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(242, 140, 56, 0.4);
+        }
+        .btn-outline-blue {
+            border: 2px solid #2E3A8C;
+            color: #2E3A8C;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-blue:hover {
+            background-color: #2E3A8C;
+            color: white;
+        }
+        .input-field, .input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .input-field:focus, .input:focus {
+            border-color: #F28C38;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #cbd5e1;
+          border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #2E3A8C;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "recharts": "https://esm.sh/recharts@^2.12.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.22.0"
+  }
+}
+</script>
+</head>
+<body class="bg-white">
+    <div id="root"></div>
+</body>
+</html>
